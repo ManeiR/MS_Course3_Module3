@@ -72,7 +72,7 @@ public class ConsultationController {
     public List<TestRequest> getForDoctor()  {
 
         User doctor = userLoggedInService.getLoggedInUser();
-        return testRequestQueryService.findByTester(doctor);
+        return testRequestQueryService.findByDoctor(doctor);
         //Implement this method
 
         // Create an object of User class and store the current logged in user first
